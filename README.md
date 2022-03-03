@@ -1,8 +1,18 @@
 # UkraineHeaderBanner
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ukraine_header_banner`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem enables you to simply include a banner in any Ruby on Rails app that will be shown to all Russian visitors. 
+It will look like this:
 
-TODO: Delete this and the text above, and describe your gem
+![example image](https://github.com/gfriebe/ukraine_header_banner/blob/master/public/example_image.png)
+
+It means: 
+```
+Dear Russian friends,
+The world needs you. Come out, be heard and
+STOP PUTIN'S WAR.
+```
+
+Help convince all Russians to stand up and stop this war!
 
 ## Installation
 
@@ -16,23 +26,20 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install ukraine_header_banner
 
 ## Usage
 
-TODO: Write usage instructions here
+Add this anywhere in your view or layout file(s):
+```
+<%= show_ukraine_header_banner %>
+```
 
-## Development
+## Disclaimer
+This is a very quick an dirty work. There are no tests and there might be display issues on certain devices.
+This gem is meant to give anyone access to a Rails app, the ability to very simply add a message, as I believe
+we need to get through to Russians on every possible channel. Only Russians themselves have the power to end this war 
+quickly while opening up a future we can then build upon.
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ukraine_header_banner.
 
 ## License
 
