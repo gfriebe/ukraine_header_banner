@@ -6,14 +6,7 @@ module UkraineHeaderBanner
 
     def self.is_russian?(ip)
 
-      begin
-        ip = IPAddr.new(ip)
-      rescue ArgumentError
-        return false
-      end
-
       ip_country_code = CountryValidator.get_country_code(ip)
-
       ip_country_code == "RU"
 
     end
