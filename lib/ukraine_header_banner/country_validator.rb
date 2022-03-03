@@ -12,7 +12,7 @@ module UkraineHeaderBanner
         return false
       end
 
-      ip_country_code = IPLocator.get_country_code(ip)
+      ip_country_code = CountryValidator.get_country_code(ip)
 
       ip_country_code == "RU"
 
